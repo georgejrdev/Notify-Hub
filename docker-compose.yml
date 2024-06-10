@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  notify-hub:
+    image: noxusjr/notify-hub:1.0.0
+    ports:
+      - "8080:8080"
+    environment:
+      EMAIL: YOUR EMAIL
+      EMAIL_APP_PASSWORD: YOUR PASS
+      EMAIL_SERVER: YOUR EMAIL SERVER (Ex- gmail, outlook, etc)
