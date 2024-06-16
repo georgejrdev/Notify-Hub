@@ -5,7 +5,7 @@
 <div id="badges" align="center">
   
   ![License](https://img.shields.io/github/license/georgejrdev/Notify-Hub.svg)
-  ![Version](https://img.shields.io/badge/version-0.0.1-53918E.svg)
+  ![Version](https://img.shields.io/badge/version-1.0.1-53918E.svg)
   ![Windows](https://img.shields.io/badge/made%20in-java-AD6845.svg)
 
 </div>
@@ -35,5 +35,4 @@ You need to use the service image available on docker hub: noxusjr/notify-hub:1.
 
 Method: Post
 
-Parameters: subject, body, to (recipient email
-)
+Parameters: subject, body, to (recipient email)

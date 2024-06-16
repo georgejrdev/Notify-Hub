@@ -19,4 +19,19 @@ public class TestSendEmail {
     public void testSendNewEmail(){
         sendEmail.sendNewEmail("Hi","how are you?","mail@iconscout.com");
     }
+
+    @Test(expected = RuntimeException.class)
+    public void testSendNewEmailWithInvalidEmail() {
+        sendEmail.sendNewEmail("Hi", "how are you?", "invalid-email");
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void testSendNewEmailWithoutAtSing() {
+        sendEmail.sendNewEmail("Hi", "how are you?", "invalidgmail.com");
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void testSendNewEmailNoDot() {
+        sendEmail.sendNewEmail("Hi", "how are you?", "invalid@gmailcom");
+    }
 }
